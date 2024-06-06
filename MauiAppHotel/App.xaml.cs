@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new views.contratasaoHospedagem());
         }
 
         protected override Window CreateWindow(IActivationState ActivationState)
