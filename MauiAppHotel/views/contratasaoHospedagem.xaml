@@ -29,7 +29,7 @@
                 </Grid>
 
                 <Label Text="Escolha sua suíte" HorizontalOptions="Center"/>
-                <Picker x:Name="pck_quarto" Title="Selecione sua acomodção"/>
+                <Picker x:Name="pck_quarto" Title="Selecione sua acomodção" ItemDisplayBinding="{Binding Descrisao}"/>
 
                 <Frame Padding="10" Margin="10">
                     <VerticalStackLayout>
@@ -47,7 +47,7 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="avançar"/>
+                <Button Text="avançar" Clicked="Button_Clicked"/>
 
             </VerticalStackLayout>
         </Frame>
